@@ -1,0 +1,15 @@
+E:\Root course\c#\Basics\IKEA-MVC\Ikea.BLL\bin\Debug\net8.0\Ikea.BLL.deps.json
+E:\Root course\c#\Basics\IKEA-MVC\Ikea.BLL\bin\Debug\net8.0\Ikea.BLL.dll
+E:\Root course\c#\Basics\IKEA-MVC\Ikea.BLL\bin\Debug\net8.0\Ikea.BLL.pdb
+E:\Root course\c#\Basics\IKEA-MVC\Ikea.BLL\bin\Debug\net8.0\Ikea.DAL.dll
+E:\Root course\c#\Basics\IKEA-MVC\Ikea.BLL\bin\Debug\net8.0\Ikea.DAL.pdb
+E:\Root course\c#\Basics\IKEA-MVC\Ikea.BLL\obj\Debug\net8.0\Ikea.BLL.csproj.AssemblyReference.cache
+E:\Root course\c#\Basics\IKEA-MVC\Ikea.BLL\obj\Debug\net8.0\Ikea.BLL.GeneratedMSBuildEditorConfig.editorconfig
+E:\Root course\c#\Basics\IKEA-MVC\Ikea.BLL\obj\Debug\net8.0\Ikea.BLL.AssemblyInfoInputs.cache
+E:\Root course\c#\Basics\IKEA-MVC\Ikea.BLL\obj\Debug\net8.0\Ikea.BLL.AssemblyInfo.cs
+E:\Root course\c#\Basics\IKEA-MVC\Ikea.BLL\obj\Debug\net8.0\Ikea.BLL.csproj.CoreCompileInputs.cache
+E:\Root course\c#\Basics\IKEA-MVC\Ikea.BLL\obj\Debug\net8.0\Ikea.BLL.csproj.Up2Date
+E:\Root course\c#\Basics\IKEA-MVC\Ikea.BLL\obj\Debug\net8.0\Ikea.BLL.dll
+E:\Root course\c#\Basics\IKEA-MVC\Ikea.BLL\obj\Debug\net8.0\refint\Ikea.BLL.dll
+E:\Root course\c#\Basics\IKEA-MVC\Ikea.BLL\obj\Debug\net8.0\Ikea.BLL.pdb
+E:\Root course\c#\Basics\IKEA-MVC\Ikea.BLL\obj\Debug\net8.0\ref\Ikea.BLL.dll

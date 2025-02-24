@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Root course\\c#\\Basics\\IKEA-MVC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{600BE8B8-B2D7-4F2A-BC71-DA4EFEA06250}|Ikea.DAL\\Ikea.DAL.csproj|e:\\root course\\c#\\basics\\ikea-mvc\\ikea.dal\\persistence\\repository\\departments\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{600BE8B8-B2D7-4F2A-BC71-DA4EFEA06250}|Ikea.DAL\\Ikea.DAL.csproj|solutionrelative:ikea.dal\\persistence\\repository\\departments\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{600BE8B8-B2D7-4F2A-BC71-DA4EFEA06250}|Ikea.DAL\\Ikea.DAL.csproj|e:\\root course\\c#\\basics\\ikea-mvc\\ikea.dal\\persistence\\repository\\departments\\idepartmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{600BE8B8-B2D7-4F2A-BC71-DA4EFEA06250}|Ikea.DAL\\Ikea.DAL.csproj|solutionrelative:ikea.dal\\persistence\\repository\\departments\\idepartmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DepartmentRepository.cs",
+              "DocumentMoniker": "E:\\Root course\\c#\\Basics\\IKEA-MVC\\Ikea.DAL\\Persistence\\Repository\\Departments\\DepartmentRepository.cs",
+              "RelativeDocumentMoniker": "Ikea.DAL\\Persistence\\Repository\\Departments\\DepartmentRepository.cs",
+              "ToolTip": "E:\\Root course\\c#\\Basics\\IKEA-MVC\\Ikea.DAL\\Persistence\\Repository\\Departments\\DepartmentRepository.cs",
+              "RelativeToolTip": "Ikea.DAL\\Persistence\\Repository\\Departments\\DepartmentRepository.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAnwBYAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T15:58:08.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IDepartmentRepository.cs",
+              "DocumentMoniker": "E:\\Root course\\c#\\Basics\\IKEA-MVC\\Ikea.DAL\\Persistence\\Repository\\Departments\\IDepartmentRepository.cs",
+              "RelativeDocumentMoniker": "Ikea.DAL\\Persistence\\Repository\\Departments\\IDepartmentRepository.cs",
+              "ToolTip": "E:\\Root course\\c#\\Basics\\IKEA-MVC\\Ikea.DAL\\Persistence\\Repository\\Departments\\IDepartmentRepository.cs",
+              "RelativeToolTip": "Ikea.DAL\\Persistence\\Repository\\Departments\\IDepartmentRepository.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAAA8AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T15:50:07.611Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

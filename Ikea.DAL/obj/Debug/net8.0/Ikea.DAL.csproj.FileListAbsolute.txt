@@ -1,0 +1,12 @@
+E:\Root course\c#\Basics\IKEA-MVC\Ikea.DAL\bin\Debug\net8.0\Ikea.DAL.deps.json
+E:\Root course\c#\Basics\IKEA-MVC\Ikea.DAL\bin\Debug\net8.0\Ikea.DAL.dll
+E:\Root course\c#\Basics\IKEA-MVC\Ikea.DAL\bin\Debug\net8.0\Ikea.DAL.pdb
+E:\Root course\c#\Basics\IKEA-MVC\Ikea.DAL\obj\Debug\net8.0\Ikea.DAL.GeneratedMSBuildEditorConfig.editorconfig
+E:\Root course\c#\Basics\IKEA-MVC\Ikea.DAL\obj\Debug\net8.0\Ikea.DAL.AssemblyInfoInputs.cache
+E:\Root course\c#\Basics\IKEA-MVC\Ikea.DAL\obj\Debug\net8.0\Ikea.DAL.AssemblyInfo.cs
+E:\Root course\c#\Basics\IKEA-MVC\Ikea.DAL\obj\Debug\net8.0\Ikea.DAL.csproj.CoreCompileInputs.cache
+E:\Root course\c#\Basics\IKEA-MVC\Ikea.DAL\obj\Debug\net8.0\Ikea.DAL.dll
+E:\Root course\c#\Basics\IKEA-MVC\Ikea.DAL\obj\Debug\net8.0\refint\Ikea.DAL.dll
+E:\Root course\c#\Basics\IKEA-MVC\Ikea.DAL\obj\Debug\net8.0\Ikea.DAL.pdb
+E:\Root course\c#\Basics\IKEA-MVC\Ikea.DAL\obj\Debug\net8.0\ref\Ikea.DAL.dll
+E:\Root course\c#\Basics\IKEA-MVC\Ikea.DAL\obj\Debug\net8.0\Ikea.DAL.csproj.AssemblyReference.cache
