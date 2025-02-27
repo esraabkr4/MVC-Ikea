@@ -13,3 +13,4 @@ E:\Root course\c#\Basics\IKEA-MVC\Ikea.BLL\obj\Debug\net8.0\Ikea.BLL.dll
 E:\Root course\c#\Basics\IKEA-MVC\Ikea.BLL\obj\Debug\net8.0\refint\Ikea.BLL.dll
 E:\Root course\c#\Basics\IKEA-MVC\Ikea.BLL\obj\Debug\net8.0\Ikea.BLL.pdb
 E:\Root course\c#\Basics\IKEA-MVC\Ikea.BLL\obj\Debug\net8.0\ref\Ikea.BLL.dll
+E:\Root course\c#\Basics\IKEA-MVC\Ikea.BLL\obj\Debug\net8.0\Ikea.BLL.sourcelink.json

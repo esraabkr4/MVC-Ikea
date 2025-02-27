@@ -7,13 +7,13 @@ using Ikea.DAL.Models.Departments;
 
 namespace Ikea.DAL.Persistence.Repository.Departments
 {
-    internal interface IDepartmentRepository
+    public interface IDepartmentRepository
     {
         IEnumerable<Department> GetAll(bool WithNoTracking = true);
         Department? GetById(int id);
         int Add(Department dept);
         int Update(Department dept);
         int Delete(Department dept);
-
+        IQueryable<Department> GetAllAsQueryable();
     }
 }

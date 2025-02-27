@@ -10,8 +10,4 @@
     <ProjectReference Include="..\Ikea.DAL\Ikea.DAL.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Services\" />
-  </ItemGroup>
-
 </Project>

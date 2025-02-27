@@ -10,3 +10,4 @@ E:\Root course\c#\Basics\IKEA-MVC\Ikea.DAL\obj\Debug\net8.0\refint\Ikea.DAL.dll
 E:\Root course\c#\Basics\IKEA-MVC\Ikea.DAL\obj\Debug\net8.0\Ikea.DAL.pdb
 E:\Root course\c#\Basics\IKEA-MVC\Ikea.DAL\obj\Debug\net8.0\ref\Ikea.DAL.dll
 E:\Root course\c#\Basics\IKEA-MVC\Ikea.DAL\obj\Debug\net8.0\Ikea.DAL.csproj.AssemblyReference.cache
+E:\Root course\c#\Basics\IKEA-MVC\Ikea.DAL\obj\Debug\net8.0\Ikea.DAL.sourcelink.json
