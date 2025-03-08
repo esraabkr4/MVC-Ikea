@@ -7,6 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Persistence\Data\Configurations\NewFolder1\" />
+    <Folder Include="Persistence\Data\Configurations\NewFolder2\" />
     <Folder Include="Persistence\Data\DataSeed\" />
   </ItemGroup>
 

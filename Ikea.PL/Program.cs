@@ -1,3 +1,4 @@
+using Ikea.BLL.Services.Departments;
 using Ikea.DAL.Persistence.Data;
 using Ikea.DAL.Persistence.Repository.Departments;
 using Microsoft.EntityFrameworkCore;
@@ -21,6 +22,7 @@ namespace Ikea.PL
                 
             });
             builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
+            builder.Services.AddScoped<IDepartmentService, DepartmentService>();
             //Old Method 
             //builder.Services.AddScoped<ApplicationDbContext>();
             //builder.Services.AddScoped<DbContextOptions<ApplicationDbContext>>((ServiceProvider) =>

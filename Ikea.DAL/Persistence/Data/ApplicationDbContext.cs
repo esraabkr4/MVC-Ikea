@@ -7,6 +7,7 @@ using Ikea.DAL.Models.Departments;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Identity.Client;
 using System.Reflection;
+using Ikea.DAL.Models.Employees;
 
 namespace Ikea.DAL.Persistence.Data
 {
@@ -29,6 +30,7 @@ namespace Ikea.DAL.Persistence.Data
 
         #region dbSets
         public DbSet<Department> Departments { get; set; }
+        public DbSet<Employee> Employees { get; set; }
         #endregion
     }
 }

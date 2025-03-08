@@ -5,53 +5,63 @@ using System.Text;
 using System.Threading.Tasks;
 using Ikea.DAL.Models.Departments;
 using Ikea.DAL.Persistence.Data;
+using Ikea.DAL.Persistence.Repository._Generic;
 using Microsoft.EntityFrameworkCore;
 
 namespace Ikea.DAL.Persistence.Repository.Departments
 {
-    public class DepartmentRepository : IDepartmentRepository
+    public class DepartmentRepository : GenericRepository<Department>,IDepartmentRepository
     {
-        private readonly ApplicationDbContext dbContext;
-        public DepartmentRepository(ApplicationDbContext _dbContext)
+        public DepartmentRepository(ApplicationDbContext dbContext):base(dbContext)
         {
-            dbContext= _dbContext;
+            
         }
 
-        public IEnumerable<Department> GetAll(bool WithNoTracking = true)
+        public IEnumerable<Department> GetSpecificDepartment()
         {
-            if (WithNoTracking)
-                return dbContext.Departments.AsNoTracking().ToList();
-            return dbContext.Departments.ToList();
+            throw new NotImplementedException();
+        }
+        //    private readonly ApplicationDbContext dbContext;
+        //    public DepartmentRepository(ApplicationDbContext _dbContext)
+        //    {
+        //        dbContext= _dbContext;
+        //    }
+
+        //    public IEnumerable<Department> GetAll(bool WithNoTracking = true)
+        //    {
+        //        if (WithNoTracking)
+        //            return dbContext.Departments.AsNoTracking().ToList();
+        //        return dbContext.Departments.ToList();
 
 
-        }
+        //    }
 
-        public Department? GetById(int id)
-        {
-            var dept = dbContext.Departments.Find(id);
-            return dept;
-        }
-        public int Add(Department dept)
-        {
-            dbContext.Add(dept);
-            return dbContext.SaveChanges();
-        }
+        //    public Department? GetById(int id)
+        //    {
+        //        var dept = dbContext.Departments.Find(id);
+        //        return dept;
+        //    }
+        //    public int Add(Department dept)
+        //    {
+        //        dbContext.Add(dept);
+        //        return dbContext.SaveChanges();
+        //    }
 
-        public int Update(Department dept)
-        {
-            dbContext.Update(dept);
-            return dbContext.SaveChanges();
-        }
+        //    public int Update(Department dept)
+        //    {
+        //        dbContext.Update(dept);
+        //        return dbContext.SaveChanges();
+        //    }
 
-        public int Delete(Department dept)
-        {
-            dbContext.Remove(dept);
-            return dbContext.SaveChanges();
-        }
+        //    public int Delete(Department dept)
+        //    {
+        //        dbContext.Remove(dept);
+        //        return dbContext.SaveChanges();
+        //    }
 
-        public IQueryable<Department> GetAllAsQueryable()
-        {
-            return dbContext.Departments;
-        }
+        //    public IQueryable<Department> GetAllAsQueryable()
+        //    {
+        //        return dbContext.Departments;
+        //    }
     }
 }
