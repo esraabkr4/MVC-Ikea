@@ -1,6 +1,8 @@
 using Ikea.BLL.Services.Departments;
+using Ikea.BLL.Services.Employees;
 using Ikea.DAL.Persistence.Data;
 using Ikea.DAL.Persistence.Repository.Departments;
+using Ikea.DAL.Persistence.Repository.Employees;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 
@@ -23,6 +25,8 @@ namespace Ikea.PL
             });
             builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
             builder.Services.AddScoped<IDepartmentService, DepartmentService>();
+            builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+            builder.Services.AddScoped<IEmployeeService, EmployeeService>();
             //Old Method 
             //builder.Services.AddScoped<ApplicationDbContext>();
             //builder.Services.AddScoped<DbContextOptions<ApplicationDbContext>>((ServiceProvider) =>

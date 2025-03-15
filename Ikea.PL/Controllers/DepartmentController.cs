@@ -41,6 +41,7 @@ namespace Ikea.PL.Controllers
         #endregion
         #region Post
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Create(CreateDepartmentDto NewDept)
         {
             if (!ModelState.IsValid)
@@ -120,6 +121,7 @@ namespace Ikea.PL.Controllers
         #endregion
         #region Post
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Edit([FromRoute]int id, DepartmentEditVM DeptVM)
         {
             if (!ModelState.IsValid)
@@ -170,6 +172,7 @@ namespace Ikea.PL.Controllers
         #endregion
         #region Delete
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Delete(int? id)
         {
             if (id is null)

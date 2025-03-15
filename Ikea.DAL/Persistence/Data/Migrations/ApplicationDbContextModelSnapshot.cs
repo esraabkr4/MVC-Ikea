@@ -79,8 +79,8 @@ namespace Ikea.DAL.Persistence.Data.Migrations
                     b.Property<string>("Address")
                         .HasColumnType("varchar(100)");
 
-                    b.Property<string>("Age")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int?>("Age")
+                        .HasColumnType("int");
 
                     b.Property<int>("CreatedBy")
                         .HasColumnType("int");

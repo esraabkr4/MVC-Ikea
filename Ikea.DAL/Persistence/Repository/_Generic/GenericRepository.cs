@@ -21,8 +21,8 @@ namespace Ikea.DAL.Persistence.Repository._Generic
         public IEnumerable<T> GetAll(bool WithNoTracking = true)
         {
             if (WithNoTracking)
-                return dbContext.Set<T>().AsNoTracking().ToList();
-            return dbContext.Set<T>().ToList();
+                return dbContext.Set<T>().Where(X=>!X.IsDeleted).AsNoTracking().ToList();
+            return dbContext.Set<T>().Where(X => !X.IsDeleted).ToList();
 
 
         }
@@ -52,7 +52,7 @@ namespace Ikea.DAL.Persistence.Repository._Generic
 
         public IQueryable<T> GetAllAsQueryable()
         {
-            return dbContext.Set<T>();
+            return dbContext.Set<T>().Where(X=>!X.IsDeleted);
         }
     }
 }
