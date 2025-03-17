@@ -39,7 +39,7 @@ namespace Ikea.BLL.Models.Employees
         public DateTime LastModificationOn { get; set; }
         #endregion
         [Display(Name = "Department")]
-        public int? DepartmentId { get; set; }
+        public string? Department { get; set; }
         public IFormFile Image { get; set; }
     }
 }

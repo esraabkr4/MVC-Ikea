@@ -11,9 +11,9 @@ namespace Ikea.DAL.Persistence.Repository._Generic
     {
         IEnumerable<T> GetAll(bool WithNoTracking = true);
         T? GetById(int id);
-        int Add(T emp);
-        int Update(T emp);
-        int Delete(T emp);
+        void Add(T emp);
+        void Update(T emp);
+        void Delete(T emp);
         IQueryable<T> GetAllAsQueryable();
     }
 }

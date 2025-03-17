@@ -9,16 +9,20 @@ using Ikea.DAL.Common;
 using Ikea.DAL.Models.Employees;
 using Ikea.DAL.Persistence.Repository.Departments;
 using Ikea.DAL.Persistence.Repository.Employees;
+using Ikea.DAL.Persistence.UnitOfWork;
+using Microsoft.EntityFrameworkCore;
 
 namespace Ikea.BLL.Services.Employees
 {
     public class EmployeeService : IEmployeeService
     {
-        public IEmployeeRepository _EmployeeRepo;
+        //public IEmployeeRepository _EmployeeRepo;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public EmployeeService(IEmployeeRepository EmployeeRepo)
+        public EmployeeService(/*IEmployeeRepository EmployeeRepo*/IUnitOfWork unitOfWork)
         {
-            _EmployeeRepo = EmployeeRepo;
+           // _EmployeeRepo = EmployeeRepo;
+            this._unitOfWork = unitOfWork;
         }
         public int CreateEmployee(CreateEmployeeDTO Emp)
         {
@@ -34,13 +38,14 @@ namespace Ikea.BLL.Services.Employees
                 HiringDate = Emp.HiringDate,
                 gender =  Emp.gender,
                 empType = Emp.empType,
+                DepartmentId=Emp.DepartmentId,
                 CreatedBy = 1,
                 CreatedOn = DateTime.UtcNow,
                 LastModificationBy = 1,
                 LastModificationOn = DateTime.UtcNow
             };
-            var result = _EmployeeRepo.Add(employee);
-            return result;
+             _unitOfWork.employeeRepository.Add(employee);
+            return _unitOfWork.Complete();
                
 
         }
@@ -61,32 +66,34 @@ namespace Ikea.BLL.Services.Employees
                 HiringDate = Emp.HiringDate,
                 gender = Emp.gender,
                 empType = Emp.empType,
+                DepartmentId = Emp.DepartmentId,
                 CreatedBy = 1,
                 LastModificationBy = 1,
                 LastModificationOn = DateTime.UtcNow
             };
-            var result = _EmployeeRepo.Update(employee);
-            return result;
+             _unitOfWork.employeeRepository.Update(employee);
+            return _unitOfWork.Complete();
         }
 
         public bool DeleteEmployee(int id)
         {
-            var employee=_EmployeeRepo.GetById(id);
+            var EmployeeRepo = _unitOfWork.employeeRepository;
+            var employee=EmployeeRepo.GetById(id);
             if(employee is { })
             {
                 employee.IsDeleted = true;
-                var result = _EmployeeRepo.Update(employee);
-                if (result > 0)
-                    return true;
+                 EmployeeRepo.Update(employee);
+                //if (result > 0)
+                    //return true;
             }
             
-            return false;
+            return _unitOfWork.Complete()>0;
 
         }
 
-        public IEnumerable<EmployeeDTO> GetAllEmployees()
+        public IEnumerable<EmployeeDTO> GetEmployees(string Search)
         {
-            return _EmployeeRepo.GetAllAsQueryable().Select(E => new EmployeeDTO()
+            return _unitOfWork.employeeRepository.GetAllAsQueryable().Include(E => E.Department).Where(E=>string.IsNullOrEmpty(Search)||E.Name.ToLower().Contains(Search.ToLower())).Select(E => new EmployeeDTO()
             {
                 Id=E.Id,
                 Name=E.Name,
@@ -95,13 +102,14 @@ namespace Ikea.BLL.Services.Employees
                 Salary=E.Salary,
                 Email=E.Email,
                 gender = E.gender,
-                empType = E.empType
-            });
+                empType = E.empType,
+                Department=E.Department.Name
+            }).ToList();
         }
 
         public EmployeeDetailsDTO GetEmployeeById(int id)
         {
-            var Emp= _EmployeeRepo.GetById(id);
+            var Emp= _unitOfWork.employeeRepository.GetById(id);
             if(Emp is { })
             {
 
@@ -118,6 +126,7 @@ namespace Ikea.BLL.Services.Employees
                     HiringDate = Emp.HiringDate,
                     gender = Emp.gender,
                     empType = Emp.empType,
+                    Department = Emp.Department?.Name,
                     CreatedBy = Emp.CreatedBy,
                     CreatedOn=Emp.CreatedOn,
                     LastModificationBy = Emp.LastModificationBy,

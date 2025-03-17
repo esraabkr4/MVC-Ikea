@@ -1,13 +1,18 @@
 ﻿@model CreateEmployeeDTO
 @{
     ViewData["Title"] = "Create";
+    ViewBag.Action = "Edit";
+    //var departments = new SelectList(ViewData["Departments"] as IEnumerable<DepartmentDto>, nameof(DepartmentDto.Id), nameof(DepartmentDto.Name), nameof(DepartmentDto.Description));
 
 }
 <div class="row justify-content-center align-items-center flex-column">
 
     <h1 class="col-6 my-4">Create New Employee</h1>
 
-    <form asp-action="Create" class="row col-6" enctype="multipart/form-data">
+    <partial name="Partials/CreateEditEmpPartial" model="@Model" />
+
+
+@*     <form asp-action="Create" class="row col-6" enctype="multipart/form-data">
 
         <div asp-validation-summary="ModelOnly"></div>
 
@@ -20,6 +25,12 @@
             <label class="form-label" asp-for="Email"></label>
             <input asp-for="Email" class="form-control mb-3" />
             <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+        <div class="form-group col-6">
+            <label asp-for="DepartmentId" class="control-label mb-2"></label>
+            <select asp-for="DepartmentId" asp-items="@departments" class="form-control">
+                <option value="">Choose...</option>
+            </select>
         </div>
         <div class="form-group col-6">
             <label class="form-label" asp-for="Address"></label>
@@ -83,14 +94,14 @@
 
         </div>
     </form>
-
+ *@
 
 </div>
 
 @section ValidationScripts
 {
-    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
-
-    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <partial name="_ValidationScriptsPartial" />
+    @* <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script> *@
 }
 

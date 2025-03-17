@@ -3,6 +3,8 @@ using Ikea.BLL.Services.Employees;
 using Ikea.DAL.Persistence.Data;
 using Ikea.DAL.Persistence.Repository.Departments;
 using Ikea.DAL.Persistence.Repository.Employees;
+using Ikea.DAL.Persistence.UnitOfWork;
+using Ikea.PL.Mapping;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 
@@ -20,13 +22,16 @@ namespace Ikea.PL
             //New Method
             builder.Services.AddDbContext<ApplicationDbContext>((optionsBuilder) =>
             {
+                optionsBuilder.UseLazyLoadingProxies();
                 optionsBuilder.UseSqlServer(builder.Configuration.GetConnectionString( "DefualtConnection"));
                 
             });
-            builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
+            //builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
             builder.Services.AddScoped<IDepartmentService, DepartmentService>();
-            builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+            //builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
             builder.Services.AddScoped<IEmployeeService, EmployeeService>();
+            builder.Services.AddAutoMapper(M => M.AddProfile(new MappingProfile()));
             //Old Method 
             //builder.Services.AddScoped<ApplicationDbContext>();
             //builder.Services.AddScoped<DbContextOptions<ApplicationDbContext>>((ServiceProvider) =>

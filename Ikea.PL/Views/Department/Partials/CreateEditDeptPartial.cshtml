@@ -1,0 +1,29 @@
+﻿@model DepartmentEditVM
+
+<form asp-action="Edit" method="post">
+    <div asp-validation-summary="ModelOnly"></div>
+    <div class="form-group">
+        <label class="form-label" asp-for="Code"></label>
+        <input type="text" class="form-control" name="Code" asp-for="Code" />
+        <span asp-validation-for="Code" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label class="form-label" asp-for="Name"></label>
+        <input type="text" class="form-control" name="Name" asp-for="Name" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label class="form-label" asp-for="Description"></label>
+        <textarea class="form-control" name="Name" asp-for="Description"></textarea>
+    </div>
+    <div class="form-group">
+        <label class="form-label" asp-for="CreationDate"></label>
+        <input type="date" class="form-control" name="CreationDate" asp-for="CreationDate" />
+        <span asp-validation-for="CreationDate" class="text-danger"></span>
+    </div>
+    <div>
+        <input type="submit" value="Save Changes" class="btn btn-primary" /> |
+        <a asp-action="Index" class="btn btn-light">Cancel</a>
+    </div>
+</form>

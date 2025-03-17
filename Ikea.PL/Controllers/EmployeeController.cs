@@ -1,4 +1,7 @@
-﻿using Ikea.BLL.Models.Employees;
+﻿using AspNetCoreGeneratedDocument;
+using AutoMapper;
+using Ikea.BLL.Models.Employees;
+using Ikea.BLL.Services.Departments;
 using Ikea.BLL.Services.Employees;
 using Ikea.DAL.Models.Employees;
 using Microsoft.AspNetCore.Mvc;
@@ -8,25 +11,32 @@ namespace Ikea.PL.Controllers
     public class EmployeeController : Controller
     {
         private readonly IEmployeeService _employeeService;
+        private readonly IDepartmentService _departmentService;
+        private readonly IMapper _mapper;
+
         public ILogger _Logger { get; }
         public IWebHostEnvironment _environment { get; }
 
         #region Services
-        public EmployeeController(IEmployeeService employeeService, ILogger<EmployeeController> logger, IWebHostEnvironment environment)
+        public EmployeeController(IEmployeeService employeeService, IDepartmentService departmentService, ILogger<EmployeeController> logger, IWebHostEnvironment environment,IMapper mapper)
         {
             _employeeService = employeeService;
+            this._departmentService = departmentService;
             _Logger = logger;
             _environment = environment;
+            this._mapper = mapper;
         }
         #endregion
 
         #region Index
         [HttpGet]
         //Baseurl/Employee/Index
-        public IActionResult Index()
+        public IActionResult Index(string Search)
         {
 
-            var emps = _employeeService.GetAllEmployees();
+            var emps = _employeeService.GetEmployees(Search);
+            //if(Request.IsAjaxRequest())
+            //    return PartialView(nameof(EmployeeListPartial),emps);
             return View(emps);
         }
         #endregion
@@ -36,19 +46,21 @@ namespace Ikea.PL.Controllers
         [HttpGet]
         public IActionResult Create()
         {
+            ViewData["Departments"] = _departmentService.GetAllDepartments();
             return View();
         }
         #endregion
         #region Post
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(CreateEmployeeDTO NewEmp)
+        public IActionResult Create(UpdateEmployeeDTO EmpVM)
         {
             if (!ModelState.IsValid)
-                return View(NewEmp);
+                return View(EmpVM);
             var message = string.Empty;
             try
             {
+                var NewEmp=_mapper.Map<CreateEmployeeDTO>(EmpVM);
                 var result = _employeeService.CreateEmployee(NewEmp);
                 if (result > 0)
                     return RedirectToAction(nameof(Index));
@@ -66,7 +78,7 @@ namespace Ikea.PL.Controllers
                 if (_environment.IsDevelopment())
                 {
                     message = ex.Message;
-                    return View(NewEmp);
+                    return View(EmpVM);
                 }
                 else
                 {
@@ -110,20 +122,24 @@ namespace Ikea.PL.Controllers
             if (emp is null)
                 return NotFound();
 
-            return View(new UpdateEmployeeDTO()
-            {
-                Name = emp.Name,
-                Address = emp.Address,
-                Email = emp.Email,
-                Age=emp.Age,
-                Salary=emp.Salary,
-                PhoneNumber=emp.PhoneNumber,
-                IsActive=emp.IsActive,
-                HiringDate=emp.HiringDate,
-                gender=emp.gender,
-                empType=emp.empType
+            ViewData["Departments"] = _departmentService.GetAllDepartments();
+            var UpdatedEmployee=_mapper.Map<EmployeeDetailsDTO,UpdateEmployeeDTO>(emp);
+            return View(UpdatedEmployee);
+            //Manual Mapper
+            //return View(new UpdateEmployeeDTO()
+            //{
+            //    Name = emp.Name,
+            //    Address = emp.Address,
+            //    Email = emp.Email,
+            //    Age=emp.Age,
+            //    Salary=emp.Salary,
+            //    PhoneNumber=emp.PhoneNumber,
+            //    IsActive=emp.IsActive,
+            //    HiringDate=emp.HiringDate,
+            //    gender=emp.gender,
+            //    empType=emp.empType
 
-            });
+            //});
         }
         #endregion
         #region Post

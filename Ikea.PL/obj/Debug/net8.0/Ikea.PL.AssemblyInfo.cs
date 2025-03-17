@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ikea.PL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6a376eb3c162635b52442555cae56dc7c1f9c690")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c8e9ebff2a5221586804646271caed07031b8479")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ikea.PL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ikea.PL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

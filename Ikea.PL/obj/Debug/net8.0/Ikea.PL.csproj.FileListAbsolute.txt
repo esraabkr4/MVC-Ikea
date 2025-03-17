@@ -267,3 +267,6 @@ E:\Root course\c#\Basics\IKEA-MVC\Ikea.PL\bin\Debug\net8.0\runtimes\win\lib\net7
 E:\Root course\c#\Basics\IKEA-MVC\Ikea.PL\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 E:\Root course\c#\Basics\IKEA-MVC\Ikea.PL\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 E:\Root course\c#\Basics\IKEA-MVC\Ikea.PL\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+E:\Root course\c#\Basics\IKEA-MVC\Ikea.PL\bin\Debug\net8.0\Castle.Core.dll
+E:\Root course\c#\Basics\IKEA-MVC\Ikea.PL\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Proxies.dll
+E:\Root course\c#\Basics\IKEA-MVC\Ikea.PL\bin\Debug\net8.0\AutoMapper.dll

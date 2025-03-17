@@ -38,6 +38,8 @@ namespace Ikea.BLL.Models.Employees
         public int LastModificationBy { get; set; }
         public DateTime LastModificationOn { get; set; }
         #endregion
-        
+        [Display(Name = "Department")]
+        public int? DepartmentId { get; set; }
+
     }
 }

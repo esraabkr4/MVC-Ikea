@@ -3,36 +3,32 @@
   "WorkspaceRootPath": "E:\\Root course\\c#\\Basics\\IKEA-MVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FA174EAE-968D-4E6A-AD50-30460101C6A3}|Ikea.PL\\Ikea.PL.csproj|e:\\root course\\c#\\basics\\ikea-mvc\\ikea.pl\\views\\department\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FA174EAE-968D-4E6A-AD50-30460101C6A3}|Ikea.PL\\Ikea.PL.csproj|solutionrelative:ikea.pl\\views\\department\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA174EAE-968D-4E6A-AD50-30460101C6A3}|Ikea.PL\\Ikea.PL.csproj|e:\\root course\\c#\\basics\\ikea-mvc\\ikea.pl\\views\\department\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FA174EAE-968D-4E6A-AD50-30460101C6A3}|Ikea.PL\\Ikea.PL.csproj|solutionrelative:ikea.pl\\views\\department\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA174EAE-968D-4E6A-AD50-30460101C6A3}|Ikea.PL\\Ikea.PL.csproj|e:\\root course\\c#\\basics\\ikea-mvc\\ikea.pl\\views\\employee\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FA174EAE-968D-4E6A-AD50-30460101C6A3}|Ikea.PL\\Ikea.PL.csproj|solutionrelative:ikea.pl\\views\\employee\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FA174EAE-968D-4E6A-AD50-30460101C6A3}|Ikea.PL\\Ikea.PL.csproj|e:\\root course\\c#\\basics\\ikea-mvc\\ikea.pl\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FA174EAE-968D-4E6A-AD50-30460101C6A3}|Ikea.PL\\Ikea.PL.csproj|solutionrelative:ikea.pl\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{600BE8B8-B2D7-4F2A-BC71-DA4EFEA06250}|Ikea.DAL\\Ikea.DAL.csproj|e:\\root course\\c#\\basics\\ikea-mvc\\ikea.dal\\persistence\\repository\\_generic\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{600BE8B8-B2D7-4F2A-BC71-DA4EFEA06250}|Ikea.DAL\\Ikea.DAL.csproj|solutionrelative:ikea.dal\\persistence\\repository\\_generic\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{77CCD633-73B1-4F33-A70A-DAD380CF60D8}|Ikea.BLL\\Ikea.BLL.csproj|e:\\root course\\c#\\basics\\ikea-mvc\\ikea.bll\\services\\departments\\departmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77CCD633-73B1-4F33-A70A-DAD380CF60D8}|Ikea.BLL\\Ikea.BLL.csproj|solutionrelative:ikea.bll\\services\\departments\\departmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{77CCD633-73B1-4F33-A70A-DAD380CF60D8}|Ikea.BLL\\Ikea.BLL.csproj|e:\\root course\\c#\\basics\\ikea-mvc\\ikea.bll\\services\\employees\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{77CCD633-73B1-4F33-A70A-DAD380CF60D8}|Ikea.BLL\\Ikea.BLL.csproj|solutionrelative:ikea.bll\\services\\employees\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77CCD633-73B1-4F33-A70A-DAD380CF60D8}|Ikea.BLL\\Ikea.BLL.csproj|e:\\root course\\c#\\basics\\ikea-mvc\\ikea.bll\\models\\employees\\updateemployeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77CCD633-73B1-4F33-A70A-DAD380CF60D8}|Ikea.BLL\\Ikea.BLL.csproj|solutionrelative:ikea.bll\\models\\employees\\updateemployeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{600BE8B8-B2D7-4F2A-BC71-DA4EFEA06250}|Ikea.DAL\\Ikea.DAL.csproj|e:\\root course\\c#\\basics\\ikea-mvc\\ikea.dal\\persistence\\repository\\_generic\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{600BE8B8-B2D7-4F2A-BC71-DA4EFEA06250}|Ikea.DAL\\Ikea.DAL.csproj|solutionrelative:ikea.dal\\persistence\\repository\\_generic\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA174EAE-968D-4E6A-AD50-30460101C6A3}|Ikea.PL\\Ikea.PL.csproj|e:\\root course\\c#\\basics\\ikea-mvc\\ikea.pl\\views\\employee\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FA174EAE-968D-4E6A-AD50-30460101C6A3}|Ikea.PL\\Ikea.PL.csproj|solutionrelative:ikea.pl\\views\\employee\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{600BE8B8-B2D7-4F2A-BC71-DA4EFEA06250}|Ikea.DAL\\Ikea.DAL.csproj|e:\\root course\\c#\\basics\\ikea-mvc\\ikea.dal\\persistence\\repository\\employees\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{600BE8B8-B2D7-4F2A-BC71-DA4EFEA06250}|Ikea.DAL\\Ikea.DAL.csproj|solutionrelative:ikea.dal\\persistence\\repository\\employees\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{600BE8B8-B2D7-4F2A-BC71-DA4EFEA06250}|Ikea.DAL\\Ikea.DAL.csproj|e:\\root course\\c#\\basics\\ikea-mvc\\ikea.dal\\persistence\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{600BE8B8-B2D7-4F2A-BC71-DA4EFEA06250}|Ikea.DAL\\Ikea.DAL.csproj|solutionrelative:ikea.dal\\persistence\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{600BE8B8-B2D7-4F2A-BC71-DA4EFEA06250}|Ikea.DAL\\Ikea.DAL.csproj|e:\\root course\\c#\\basics\\ikea-mvc\\ikea.dal\\persistence\\unitofwork\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{600BE8B8-B2D7-4F2A-BC71-DA4EFEA06250}|Ikea.DAL\\Ikea.DAL.csproj|solutionrelative:ikea.dal\\persistence\\unitofwork\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,106 +43,87 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "E:\\Root course\\c#\\Basics\\IKEA-MVC\\Ikea.PL\\Views\\Department\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Ikea.PL\\Views\\Department\\Edit.cshtml",
-              "ToolTip": "E:\\Root course\\c#\\Basics\\IKEA-MVC\\Ikea.PL\\Views\\Department\\Edit.cshtml",
-              "RelativeToolTip": "Ikea.PL\\Views\\Department\\Edit.cshtml",
-              "ViewState": "AgIAABkAAAAAknJAZLgEwCYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-15T11:45:01.384Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "E:\\Root course\\c#\\Basics\\IKEA-MVC\\Ikea.PL\\Views\\Department\\Create.cshtml",
-              "RelativeDocumentMoniker": "Ikea.PL\\Views\\Department\\Create.cshtml",
-              "ToolTip": "E:\\Root course\\c#\\Basics\\IKEA-MVC\\Ikea.PL\\Views\\Department\\Create.cshtml",
-              "RelativeToolTip": "Ikea.PL\\Views\\Department\\Create.cshtml",
-              "ViewState": "AgIAABcAAAAAAAAAAAD4vyYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-15T11:44:52.339Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "E:\\Root course\\c#\\Basics\\IKEA-MVC\\Ikea.PL\\Views\\Employee\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Ikea.PL\\Views\\Employee\\Edit.cshtml",
-              "ToolTip": "E:\\Root course\\c#\\Basics\\IKEA-MVC\\Ikea.PL\\Views\\Employee\\Edit.cshtml",
-              "RelativeToolTip": "Ikea.PL\\Views\\Employee\\Edit.cshtml",
-              "ViewState": "AgIAAEwAAAAAAAAAAAD4v1cAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-15T11:35:58.999Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GenericRepository.cs",
-              "DocumentMoniker": "E:\\Root course\\c#\\Basics\\IKEA-MVC\\Ikea.DAL\\Persistence\\Repository\\_Generic\\GenericRepository.cs",
-              "RelativeDocumentMoniker": "Ikea.DAL\\Persistence\\Repository\\_Generic\\GenericRepository.cs",
-              "ToolTip": "E:\\Root course\\c#\\Basics\\IKEA-MVC\\Ikea.DAL\\Persistence\\Repository\\_Generic\\GenericRepository.cs",
-              "RelativeToolTip": "Ikea.DAL\\Persistence\\Repository\\_Generic\\GenericRepository.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAEwDYAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T11:33:47.345Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UpdateEmployeeDTO.cs",
-              "DocumentMoniker": "E:\\Root course\\c#\\Basics\\IKEA-MVC\\Ikea.BLL\\Models\\Employees\\UpdateEmployeeDTO.cs",
-              "RelativeDocumentMoniker": "Ikea.BLL\\Models\\Employees\\UpdateEmployeeDTO.cs",
-              "ToolTip": "E:\\Root course\\c#\\Basics\\IKEA-MVC\\Ikea.BLL\\Models\\Employees\\UpdateEmployeeDTO.cs",
-              "RelativeToolTip": "Ikea.BLL\\Models\\Employees\\UpdateEmployeeDTO.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAewBgAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T11:30:12.185Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EmployeeService.cs",
-              "DocumentMoniker": "E:\\Root course\\c#\\Basics\\IKEA-MVC\\Ikea.BLL\\Services\\Employees\\EmployeeService.cs",
-              "RelativeDocumentMoniker": "Ikea.BLL\\Services\\Employees\\EmployeeService.cs",
-              "ToolTip": "E:\\Root course\\c#\\Basics\\IKEA-MVC\\Ikea.BLL\\Services\\Employees\\EmployeeService.cs",
-              "RelativeToolTip": "Ikea.BLL\\Services\\Employees\\EmployeeService.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAvwFgAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T11:19:04.718Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "E:\\Root course\\c#\\Basics\\IKEA-MVC\\Ikea.PL\\Views\\Employee\\Details.cshtml",
-              "RelativeDocumentMoniker": "Ikea.PL\\Views\\Employee\\Details.cshtml",
-              "ToolTip": "E:\\Root course\\c#\\Basics\\IKEA-MVC\\Ikea.PL\\Views\\Employee\\Details.cshtml",
-              "RelativeToolTip": "Ikea.PL\\Views\\Employee\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGgAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-15T11:16:05.834Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "EmployeeController.cs",
               "DocumentMoniker": "E:\\Root course\\c#\\Basics\\IKEA-MVC\\Ikea.PL\\Controllers\\EmployeeController.cs",
               "RelativeDocumentMoniker": "Ikea.PL\\Controllers\\EmployeeController.cs",
               "ToolTip": "E:\\Root course\\c#\\Basics\\IKEA-MVC\\Ikea.PL\\Controllers\\EmployeeController.cs",
               "RelativeToolTip": "Ikea.PL\\Controllers\\EmployeeController.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAvwGYAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T09:16:26.251Z",
+              "WhenOpened": "2025-03-17T10:00:31.034Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DepartmentService.cs",
+              "DocumentMoniker": "E:\\Root course\\c#\\Basics\\IKEA-MVC\\Ikea.BLL\\Services\\Departments\\DepartmentService.cs",
+              "RelativeDocumentMoniker": "Ikea.BLL\\Services\\Departments\\DepartmentService.cs",
+              "ToolTip": "E:\\Root course\\c#\\Basics\\IKEA-MVC\\Ikea.BLL\\Services\\Departments\\DepartmentService.cs",
+              "RelativeToolTip": "Ikea.BLL\\Services\\Departments\\DepartmentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T10:00:17.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmployeeService.cs",
+              "DocumentMoniker": "E:\\Root course\\c#\\Basics\\IKEA-MVC\\Ikea.BLL\\Services\\Employees\\EmployeeService.cs",
+              "RelativeDocumentMoniker": "Ikea.BLL\\Services\\Employees\\EmployeeService.cs",
+              "ToolTip": "E:\\Root course\\c#\\Basics\\IKEA-MVC\\Ikea.BLL\\Services\\Employees\\EmployeeService.cs",
+              "RelativeToolTip": "Ikea.BLL\\Services\\Employees\\EmployeeService.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAvwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T09:59:46.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "E:\\Root course\\c#\\Basics\\IKEA-MVC\\Ikea.DAL\\Persistence\\Repository\\_Generic\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "Ikea.DAL\\Persistence\\Repository\\_Generic\\GenericRepository.cs",
+              "ToolTip": "E:\\Root course\\c#\\Basics\\IKEA-MVC\\Ikea.DAL\\Persistence\\Repository\\_Generic\\GenericRepository.cs",
+              "RelativeToolTip": "Ikea.DAL\\Persistence\\Repository\\_Generic\\GenericRepository.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAnwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T09:59:23.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmployeeRepository.cs",
+              "DocumentMoniker": "E:\\Root course\\c#\\Basics\\IKEA-MVC\\Ikea.DAL\\Persistence\\Repository\\Employees\\EmployeeRepository.cs",
+              "RelativeDocumentMoniker": "Ikea.DAL\\Persistence\\Repository\\Employees\\EmployeeRepository.cs",
+              "ToolTip": "E:\\Root course\\c#\\Basics\\IKEA-MVC\\Ikea.DAL\\Persistence\\Repository\\Employees\\EmployeeRepository.cs",
+              "RelativeToolTip": "Ikea.DAL\\Persistence\\Repository\\Employees\\EmployeeRepository.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAnwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T09:59:03.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "E:\\Root course\\c#\\Basics\\IKEA-MVC\\Ikea.DAL\\Persistence\\UnitOfWork\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "Ikea.DAL\\Persistence\\UnitOfWork\\UnitOfWork.cs",
+              "ToolTip": "E:\\Root course\\c#\\Basics\\IKEA-MVC\\Ikea.DAL\\Persistence\\UnitOfWork\\UnitOfWork.cs",
+              "RelativeToolTip": "Ikea.DAL\\Persistence\\UnitOfWork\\UnitOfWork.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA7wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T09:58:10.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "E:\\Root course\\c#\\Basics\\IKEA-MVC\\Ikea.DAL\\Persistence\\UnitOfWork\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "Ikea.DAL\\Persistence\\UnitOfWork\\IUnitOfWork.cs",
+              "ToolTip": "E:\\Root course\\c#\\Basics\\IKEA-MVC\\Ikea.DAL\\Persistence\\UnitOfWork\\IUnitOfWork.cs",
+              "RelativeToolTip": "Ikea.DAL\\Persistence\\UnitOfWork\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T09:56:18.823Z"
             }
           ]
         }

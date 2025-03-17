@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Ikea.DAL.Common;
+using Ikea.DAL.Models.Departments;
 using Microsoft.AspNetCore.Http;
 
 namespace Ikea.BLL.Models.Employees
@@ -36,6 +37,10 @@ namespace Ikea.BLL.Models.Employees
         public DateTime CreatedOn { get; set; }
         public int LastModificationBy { get; set; }
         public DateTime LastModificationOn { get; set; }
+        #endregion
+        #region Department
+        [Display(Name ="Department")]
+        public int? DepartmentId { get; set; }
         #endregion
 
     }

@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Ikea.DAL.Common;
+using Ikea.DAL.Models.Departments;
 
 namespace Ikea.DAL.Models.Employees
-{public class Employee:ModelBase
+{
+    public class Employee:ModelBase
     {
         public string Name { get; set; } = null!;
         public int? Age { get; set; }
@@ -18,5 +20,9 @@ namespace Ikea.DAL.Models.Employees
         public DateTime HiringDate { get; set; }
         public Gender gender { get; set; }
         public EmpType empType { get; set; }
+        #region Department
+        public int? DepartmentId { get; set; }
+        public virtual Department? Department { get; set; }
+        #endregion
     }
 }
