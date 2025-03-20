@@ -42,6 +42,6 @@ namespace Ikea.BLL.Models.Employees
         #endregion
         [Display(Name = "Department")]
         public string? Department { get; set; }
-        public IFormFile Image { get; set; }
+        public string? Image { get; set; }
     }
 }

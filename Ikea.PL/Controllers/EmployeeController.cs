@@ -31,10 +31,10 @@ namespace Ikea.PL.Controllers
         #region Index
         [HttpGet]
         //Baseurl/Employee/Index
-        public IActionResult Index(string Search)
+        public async Task<IActionResult> Index(string Search)
         {
 
-            var emps = _employeeService.GetEmployees(Search);
+            var emps =await _employeeService.GetEmployeesAsync(Search);
             //if(Request.IsAjaxRequest())
             //    return PartialView(nameof(EmployeeListPartial),emps);
             return View(emps);
@@ -44,16 +44,16 @@ namespace Ikea.PL.Controllers
         #region Create
         #region Get
         [HttpGet]
-        public IActionResult Create()
+        public async Task<IActionResult> Create()
         {
-            ViewData["Departments"] = _departmentService.GetAllDepartments();
+            ViewData["Departments"] =await _departmentService.GetAllDepartmentsAsync();
             return View();
         }
         #endregion
         #region Post
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(UpdateEmployeeDTO EmpVM)
+        public async Task<IActionResult> Create(UpdateEmployeeDTO EmpVM)
         {
             if (!ModelState.IsValid)
                 return View(EmpVM);
@@ -61,7 +61,7 @@ namespace Ikea.PL.Controllers
             try
             {
                 var NewEmp=_mapper.Map<CreateEmployeeDTO>(EmpVM);
-                var result = _employeeService.CreateEmployee(NewEmp);
+                var result =await _employeeService.CreateEmployeeAsync(NewEmp);
                 if (result > 0)
                     return RedirectToAction(nameof(Index));
                 else
@@ -97,12 +97,12 @@ namespace Ikea.PL.Controllers
 
         #region Details
         [HttpGet]
-        public IActionResult Details(int? id)
+        public async Task<IActionResult> Details(int? id)
         {
             if (id is null)
                 return BadRequest();
 
-            var emp = _employeeService.GetEmployeeById(id.Value);
+            var emp = _employeeService.GetEmployeeByIdAsync(id.Value);
             if (emp is null)
                 return NotFound();
 
@@ -113,16 +113,16 @@ namespace Ikea.PL.Controllers
         #region Update
         #region Get
         [HttpGet]
-        public IActionResult Edit(int? id)
+        public async Task<IActionResult> Edit(int? id)
         {
             if (id is null)
                 return BadRequest();
 
-            var emp = _employeeService.GetEmployeeById(id.Value);
+            var emp =await _employeeService.GetEmployeeByIdAsync(id.Value);
             if (emp is null)
                 return NotFound();
 
-            ViewData["Departments"] = _departmentService.GetAllDepartments();
+            ViewData["Departments"] =await _departmentService.GetAllDepartmentsAsync ();
             var UpdatedEmployee=_mapper.Map<EmployeeDetailsDTO,UpdateEmployeeDTO>(emp);
             return View(UpdatedEmployee);
             //Manual Mapper
@@ -145,7 +145,7 @@ namespace Ikea.PL.Controllers
         #region Post
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit([FromRoute] int id, UpdateEmployeeDTO empDto)
+        public async Task<IActionResult> Edit([FromRoute] int id, UpdateEmployeeDTO empDto)
         {
             if (!ModelState.IsValid)
                 return View(empDto);
@@ -153,7 +153,7 @@ namespace Ikea.PL.Controllers
             try
             {
                 empDto.Id = id;
-                var result = _employeeService.UpdateEmployee(empDto);
+                var result =await _employeeService.UpdateEmployeeAsync(empDto);
                 if (result > 0)
                     return RedirectToAction(nameof(Index));
                 else
@@ -189,12 +189,12 @@ namespace Ikea.PL.Controllers
         #region Delete
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Delete(int? id)
+        public async Task<IActionResult> Delete(int? id)
         {
             if (id is null)
                 return BadRequest();
 
-            var result = _employeeService.DeleteEmployee(id.Value);
+            var result =await _employeeService.DeleteEmployeeAsync(id.Value);
             if (!result)
                 return NotFound();
             return RedirectToAction(nameof(Index));

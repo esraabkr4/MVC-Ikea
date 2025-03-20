@@ -270,3 +270,8 @@ E:\Root course\c#\Basics\IKEA-MVC\Ikea.PL\bin\Debug\net8.0\runtimes\win\lib\net7
 E:\Root course\c#\Basics\IKEA-MVC\Ikea.PL\bin\Debug\net8.0\Castle.Core.dll
 E:\Root course\c#\Basics\IKEA-MVC\Ikea.PL\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Proxies.dll
 E:\Root course\c#\Basics\IKEA-MVC\Ikea.PL\bin\Debug\net8.0\AutoMapper.dll
+E:\Root course\c#\Basics\IKEA-MVC\Ikea.PL\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\Root course\c#\Basics\IKEA-MVC\Ikea.PL\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\Root course\c#\Basics\IKEA-MVC\Ikea.PL\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\Root course\c#\Basics\IKEA-MVC\Ikea.PL\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+E:\Root course\c#\Basics\IKEA-MVC\Ikea.PL\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll

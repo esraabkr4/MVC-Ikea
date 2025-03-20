@@ -23,7 +23,7 @@ namespace Ikea.BLL.Services.Departments
             this._unitOfWork = unitOfWork;
         }
 
-        public IEnumerable<DepartmentDto> GetAllDepartments()
+        public async Task< IEnumerable<DepartmentDto>> GetAllDepartmentsAsync()
         {
             //var Departments = _unitOfWork.departmentRepository.GetAll();
             //foreach (var dept in Departments)
@@ -38,20 +38,20 @@ namespace Ikea.BLL.Services.Departments
             //        CreationDate = dept.CreationDate
             //    };
             //}
-            var Departments = _unitOfWork.departmentRepository.GetAllAsQueryable().Select(dept => new DepartmentDto()
+            var Departments =await _unitOfWork.departmentRepository.GetAllAsQueryable().Select(dept => new DepartmentDto()
             {
                 Id = dept.Id,
                 Name = dept.Name,
                 Description = dept.Description,
                 Code = dept.Code,
                 CreationDate = dept.CreationDate
-            }).AsNoTracking().ToList();
+            }).AsNoTracking().ToListAsync();
             return Departments;
         }
 
-        public DepartmentDetailsDto GetDepartmentsById(int id)
+        public async Task<DepartmentDetailsDto> GetDepartmentsByIdAsync(int id)
         {
-            var Dept=_unitOfWork.departmentRepository.GetById(id);
+            var Dept=await _unitOfWork.departmentRepository.GetByIdAsync(id);
             //if (Dept is not null) { equivlant
             if (Dept is { })
             {
@@ -71,7 +71,7 @@ namespace Ikea.BLL.Services.Departments
             return null;
            
         }
-        public int CreateDepartment(CreateDepartmentDto Dept)
+        public async Task<int> CreateDepartmentAsync(CreateDepartmentDto Dept)
         {
             
             if (Dept is { })
@@ -88,13 +88,13 @@ namespace Ikea.BLL.Services.Departments
                     LastModificationBy = 1,
                     LastModificationOn = DateTime.UtcNow,
                 };
-                _unitOfWork.departmentRepository.Add(department);
-                 return _unitOfWork.Complete();
+                 _unitOfWork.departmentRepository.Add(department);
+                 return await _unitOfWork.CompleteAsync();
 
             }
             return 0;
         }
-        public int UpdateDepartment(UpdateDepartmentDto Dept)
+        public async Task<int> UpdateDepartmentAsync(UpdateDepartmentDto Dept)
         {
 
             if (Dept is { })
@@ -112,19 +112,19 @@ namespace Ikea.BLL.Services.Departments
                     LastModificationOn = DateTime.UtcNow,
                 };
                 _unitOfWork.departmentRepository.Update(department);
-                return _unitOfWork.Complete();
+                return await _unitOfWork.CompleteAsync();
 
             }
             return 0;
         }
-        public bool DeleteDepartment(int id)
+        public async Task<bool> DeleteDepartmentAsync(int id)
         {
             var DepartmentRepo = _unitOfWork.departmentRepository;
-            var dept= DepartmentRepo.GetById(id);
+            var dept=await DepartmentRepo.GetByIdAsync(id);
             if(dept is { })
             {
                  DepartmentRepo.Delete(dept);
-                return _unitOfWork.Complete() > 0;
+                return await _unitOfWork.CompleteAsync() > 0;
             }
             return false;
         }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TEGLfkgA8p33cvjFQjwpCwUmtYjZSMuI9kpOHqog4Gc=",
+  "Hash": "ySp73A4M1mmKbv9zCwIN8XX9Ya3hIpEK6MDH8cS9VKQ=",
   "Source": "Ikea.PL",
   "BasePath": "_content/Ikea.PL",
   "Mode": "Default",
@@ -57,6 +57,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "E:\\Root course\\c#\\Basics\\IKEA-MVC\\Ikea.PL\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Ikea.PL.bundle.scp.css"
+    },
+    {
+      "Identity": "E:\\Root course\\c#\\Basics\\IKEA-MVC\\Ikea.PL\\wwwroot\\css\\AuthLayout.css",
+      "SourceId": "Ikea.PL",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Root course\\c#\\Basics\\IKEA-MVC\\Ikea.PL\\wwwroot\\",
+      "BasePath": "_content/Ikea.PL",
+      "RelativePath": "css/AuthLayout#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hv9sow44dx",
+      "Integrity": "Awf6u9iQ89C41TWVb8fzk4Ha2xnPlznN+oWemoVAgKk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\AuthLayout.css"
     },
     {
       "Identity": "E:\\Root course\\c#\\Basics\\IKEA-MVC\\Ikea.PL\\wwwroot\\css\\site.css",
@@ -1321,6 +1342,88 @@
   ],
   "Endpoints": [
     {
+      "Route": "css/AuthLayout.css",
+      "AssetFile": "E:\\Root course\\c#\\Basics\\IKEA-MVC\\Ikea.PL\\wwwroot\\css\\AuthLayout.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16996"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Awf6u9iQ89C41TWVb8fzk4Ha2xnPlznN+oWemoVAgKk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 22:13:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Awf6u9iQ89C41TWVb8fzk4Ha2xnPlznN+oWemoVAgKk="
+        }
+      ]
+    },
+    {
+      "Route": "css/AuthLayout.hv9sow44dx.css",
+      "AssetFile": "E:\\Root course\\c#\\Basics\\IKEA-MVC\\Ikea.PL\\wwwroot\\css\\AuthLayout.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16996"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Awf6u9iQ89C41TWVb8fzk4Ha2xnPlznN+oWemoVAgKk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 18 Mar 2025 22:13:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hv9sow44dx"
+        },
+        {
+          "Name": "label",
+          "Value": "css/AuthLayout.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Awf6u9iQ89C41TWVb8fzk4Ha2xnPlznN+oWemoVAgKk="
+        }
+      ]
+    },
+    {
       "Route": "css/site.c2tiyv64ts.css",
       "AssetFile": "E:\\Root course\\c#\\Basics\\IKEA-MVC\\Ikea.PL\\wwwroot\\css\\site.css",
       "Selectors": [],
@@ -1507,7 +1610,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Mar 2025 07:35:09 GMT"
+          "Value": "Tue, 18 Mar 2025 23:50:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1544,7 +1647,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Mar 2025 07:35:09 GMT"
+          "Value": "Tue, 18 Mar 2025 23:50:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1581,7 +1684,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Mar 2025 07:35:09 GMT"
+          "Value": "Tue, 18 Mar 2025 23:50:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1626,7 +1729,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Mar 2025 07:35:09 GMT"
+          "Value": "Tue, 18 Mar 2025 23:50:39 GMT"
         },
         {
           "Name": "Cache-Control",

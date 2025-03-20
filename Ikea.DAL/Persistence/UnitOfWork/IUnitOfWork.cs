@@ -8,11 +8,11 @@ using Ikea.DAL.Persistence.Repository.Employees;
 
 namespace Ikea.DAL.Persistence.UnitOfWork
 {
-    public interface IUnitOfWork:IDisposable
+    public interface IUnitOfWork:IAsyncDisposable
     {
         public IEmployeeRepository employeeRepository { get;  }
         public IDepartmentRepository departmentRepository { get;  }
-        int Complete();
+        Task<int> CompleteAsync();
 
     }
 }

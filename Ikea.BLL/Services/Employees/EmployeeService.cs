@@ -5,6 +5,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using Ikea.BLL.Models.Employees;
+using Ikea.BLL.Services.Common;
 using Ikea.DAL.Common;
 using Ikea.DAL.Models.Employees;
 using Ikea.DAL.Persistence.Repository.Departments;
@@ -19,12 +20,15 @@ namespace Ikea.BLL.Services.Employees
         //public IEmployeeRepository _EmployeeRepo;
         private readonly IUnitOfWork _unitOfWork;
 
-        public EmployeeService(/*IEmployeeRepository EmployeeRepo*/IUnitOfWork unitOfWork)
+        public IAttachmentService _attachmentService { get; }
+
+        public EmployeeService(/*IEmployeeRepository EmployeeRepo*/IUnitOfWork unitOfWork,IAttachmentService attachmentService)
         {
            // _EmployeeRepo = EmployeeRepo;
             this._unitOfWork = unitOfWork;
+            _attachmentService = attachmentService;
         }
-        public int CreateEmployee(CreateEmployeeDTO Emp)
+        public async Task<int> CreateEmployeeAsync(CreateEmployeeDTO Emp)
         {
             var employee = new Employee()
             {
@@ -39,18 +43,23 @@ namespace Ikea.BLL.Services.Employees
                 gender =  Emp.gender,
                 empType = Emp.empType,
                 DepartmentId=Emp.DepartmentId,
+                //Image=Emp.Image,
                 CreatedBy = 1,
                 CreatedOn = DateTime.UtcNow,
                 LastModificationBy = 1,
                 LastModificationOn = DateTime.UtcNow
             };
+            if (Emp.Image is not null)
+            {
+                employee.Image=await _attachmentService.UploadFileAsync(Emp.Image, "Files/Images");
+            }
              _unitOfWork.employeeRepository.Add(employee);
-            return _unitOfWork.Complete();
+            return await _unitOfWork.CompleteAsync();
                
 
         }
 
-        public int UpdateEmployee(UpdateEmployeeDTO Emp)
+        public async Task<int> UpdateEmployeeAsync(UpdateEmployeeDTO Emp)
         {
 
             var employee = new Employee()
@@ -72,13 +81,13 @@ namespace Ikea.BLL.Services.Employees
                 LastModificationOn = DateTime.UtcNow
             };
              _unitOfWork.employeeRepository.Update(employee);
-            return _unitOfWork.Complete();
+            return await _unitOfWork.CompleteAsync();
         }
 
-        public bool DeleteEmployee(int id)
+        public async Task<bool> DeleteEmployeeAsync(int id)
         {
             var EmployeeRepo = _unitOfWork.employeeRepository;
-            var employee=EmployeeRepo.GetById(id);
+            var employee= await EmployeeRepo.GetByIdAsync(id);
             if(employee is { })
             {
                 employee.IsDeleted = true;
@@ -87,13 +96,13 @@ namespace Ikea.BLL.Services.Employees
                     //return true;
             }
             
-            return _unitOfWork.Complete()>0;
+            return await _unitOfWork.CompleteAsync()>0;
 
         }
 
-        public IEnumerable<EmployeeDTO> GetEmployees(string Search)
+        public async Task<IEnumerable<EmployeeDTO>> GetEmployeesAsync(string Search)
         {
-            return _unitOfWork.employeeRepository.GetAllAsQueryable().Include(E => E.Department).Where(E=>string.IsNullOrEmpty(Search)||E.Name.ToLower().Contains(Search.ToLower())).Select(E => new EmployeeDTO()
+            return await _unitOfWork.employeeRepository.GetAllAsQueryable().Include(E => E.Department).Where(E=>string.IsNullOrEmpty(Search)||E.Name.ToLower().Contains(Search.ToLower())).Select(E => new EmployeeDTO()
             {
                 Id=E.Id,
                 Name=E.Name,
@@ -103,13 +112,14 @@ namespace Ikea.BLL.Services.Employees
                 Email=E.Email,
                 gender = E.gender,
                 empType = E.empType,
-                Department=E.Department.Name
-            }).ToList();
+                Department=E.Department.Name,
+                Image=E.Image
+            }).ToListAsync();
         }
 
-        public EmployeeDetailsDTO GetEmployeeById(int id)
+        public async Task<EmployeeDetailsDTO> GetEmployeeByIdAsync(int id)
         {
-            var Emp= _unitOfWork.employeeRepository.GetById(id);
+            var Emp=await _unitOfWork.employeeRepository.GetByIdAsync(id);
             if(Emp is { })
             {
 
@@ -127,6 +137,7 @@ namespace Ikea.BLL.Services.Employees
                     gender = Emp.gender,
                     empType = Emp.empType,
                     Department = Emp.Department?.Name,
+                    Image = Emp.Image,
                     CreatedBy = Emp.CreatedBy,
                     CreatedOn=Emp.CreatedOn,
                     LastModificationBy = Emp.LastModificationBy,

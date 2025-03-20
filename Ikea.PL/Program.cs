@@ -1,10 +1,13 @@
+using Ikea.BLL.Services.Common;
 using Ikea.BLL.Services.Departments;
 using Ikea.BLL.Services.Employees;
+using Ikea.DAL.Models.Identity;
 using Ikea.DAL.Persistence.Data;
 using Ikea.DAL.Persistence.Repository.Departments;
 using Ikea.DAL.Persistence.Repository.Employees;
 using Ikea.DAL.Persistence.UnitOfWork;
 using Ikea.PL.Mapping;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 
@@ -32,6 +35,16 @@ namespace Ikea.PL
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
             builder.Services.AddScoped<IEmployeeService, EmployeeService>();
             builder.Services.AddAutoMapper(M => M.AddProfile(new MappingProfile()));
+            builder.Services.AddTransient<IAttachmentService, AttachmentService>();
+            builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
+            {
+                options.Password.RequiredLength = 5;
+                options.Password.RequireNonAlphanumeric = true;
+                options.Password.RequireUppercase = true;
+                options.Password.RequireLowercase = true;
+            }).AddEntityFrameworkStores<ApplicationDbContext>();
+       
+
             //Old Method 
             //builder.Services.AddScoped<ApplicationDbContext>();
             //builder.Services.AddScoped<DbContextOptions<ApplicationDbContext>>((ServiceProvider) =>

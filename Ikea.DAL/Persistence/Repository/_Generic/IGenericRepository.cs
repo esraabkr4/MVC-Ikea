@@ -9,8 +9,8 @@ namespace Ikea.DAL.Persistence.Repository._Generic
 {
     public interface IGenericRepository<T> where T : ModelBase
     {
-        IEnumerable<T> GetAll(bool WithNoTracking = true);
-        T? GetById(int id);
+        Task<IEnumerable<T>> GetAllAsync(bool WithNoTracking = true);
+        Task<T?> GetByIdAsync(int id);
         void Add(T emp);
         void Update(T emp);
         void Delete(T emp);
